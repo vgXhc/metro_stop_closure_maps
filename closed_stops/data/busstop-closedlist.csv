@@ -1,0 +1,875 @@
+Stop ID,Direction,Stop Name
+2488,SB,505 Science Dr
+2169,NB,505 Science Drive
+7912,SB,Acewood at Agate
+7943,NB,Acewood at Agate
+7176,SB,Acewood at Cottage Grove
+7925,NB,Acewood at Cottage Grove
+7369,NB,Acewood at Goldfinch
+7898,SB,Acewood at Goldfinch
+7181,NB,Acewood at Leo
+7282,SB,Acewood at Leo
+7313,NB,Acewood at Martha
+7836,SB,Acewood at Martha
+7140,SB,Acewood at Onyx
+7969,NB,Acewood at Onyx
+7156,SB,Acewood at Starker
+7843,NB,Advance at Pflaum
+3224,SB,Agriculture at Femrite
+3462,EB,Agriculture at Tradewinds
+2559,NB,Allen at Chamberlain
+2678,SB,Allen at Chamberlain
+2640,SB,Allen at Commonwealth
+2969,NB,Allen at Commonwealth
+2306,SB,Allen at Regent
+2855,NB,Allen at Regent
+2517,NB,Allen at Rowley
+2239,NB,Allen at University
+2880,SB,Allen at University
+4849,NB,Allied at Jenewein
+4806,SB,Allied at Lovell
+4158,SB,Allied at Thurston
+4663,NB,Allied at Thurston
+9262,SB,American at American Family
+9595,EB,American at American Family
+9630,SB,American at Buttonwood
+9333,NB,American at Eastpark
+9196,SB,American at F I Headquarters
+9327,NB,American at F I Headquarters
+9803,NB,American at Tancho
+9684,WB,American Family at American
+9900,SB,American Family at F I Building
+7437,NB,Amnicon at Aztalan
+7944,SB,Amnicon at Aztalan
+7560,SB,Amnicon at Cottage Grove
+7811,NB,Amnicon at Cottage Grove
+9259,EB,Anderson at Hoffman
+9724,WB,Anderson at Hoffman
+9666,NB,Anderson at Pankratz
+9847,SB,Anderson at Pankratz
+9383,EB,Anderson at Pearson
+9532,WB,Anderson at Pearson
+9144,EB,Anniversary at Forest Run
+9198,EB,Anniversary at Hayes
+7243,NB,Atlas at Argosy
+7751,NB,Atlas at Cottage Grove
+7527,NB,Atlas at Neptune
+1907,EB,Atwood at Oakridge
+0047,NB,Babcock at Linden
+3105,NB,Badger at Nob Hill
+3550,SB,Badger at Nob Hill
+3811,EB,Badger at Rimrock
+1936,EB,Baldwin at Sherman
+0433,EB,Beld at Gilson
+4102,WB,Beltline N at Cannonball
+4516,WB,Beltline N at Damon
+4144,WB,Beltline N at Todd
+4351,EB,Beltline S at Cannonball
+4728,WB,Beltline S at Cannonball
+4412,WB,Beltline S at Grandview
+4776,WB,Beltline S at River Bend
+4873,EB,Beltline S at River Bend
+4685,EB,Beltline S at Seminole
+4782,WB,Beltline S at Todd
+4841,EB,Beltline S at Todd
+9829,NB,Biltmore at Buttonwood
+3592,WB,Brandenburg at Freese
+0751,NB,Breese at Hoyt
+0349,NB,Breese at Regent
+0916,SB,Breese at Regent
+4909,EB,Britta at Verona E
+8319,NB,Brookwood at Hammersley
+8932,SB,Brookwood at Piping Rock
+7152,NB,Buckeye at Davies
+7131,SB,Buckeye at Monona
+7388,WB,Buckeye at Monona
+5107,EB,Burning Wood at Arapahoe
+1870,SB,Butler at Main
+9744,WB,Buttonwood at American Family
+2259,EB,Capital at Baker
+2355,EB,Capital at Old Middleton
+2165,EB,Capital at University
+4980,WB,Carling at Allied
+8259,EB,Carnwood at Maple Grove
+8388,WB,Carnwood at Maple Grove
+8461,EB,Carnwood at Mckenna
+8351,EB,Carnwood at Muir Field
+1324,SB,Carroll at Mifflin
+9799,NB,City View at Burke
+9826,SB,City View at Burke
+9241,NB,City View at Crossroads
+9131,EB,City View at High Crossing
+9498,SB,City View at Wall
+9957,NB,City View at Wall
+4426,SB,Coho at Beltline S
+4787,NB,Coho at Beltline S
+6197,EB,Colony at Gammon
+5295,NB,Comanche at Wheeler
+5540,SB,Comanche at Wheeler
+1117,EB,Commercial at Kedzie
+1852,WB,Commercial at Kedzie
+1326,WB,Commercial at North Lawn
+1605,EB,Commercial at North Lawn
+1115,EB,Commercial at Oak
+9740,WB,Commercial N at Fair Oaks
+9361,EB,Commercial S at Fair Oaks
+2173,NB,Commonwealth at Gregory
+2710,SB,Commonwealth at Gregory
+2503,NB,Commonwealth at Leonard
+2624,SB,Commonwealth at Leonard
+2279,NB,Commonwealth at Monroe
+2135,NB,Commonwealth at Rugby
+2180,SB,Commonwealth at Rugby
+9975,NB,Continental at Washington
+7100,EB,Corporate at East Transfer
+4141,EB,Crawford at Helene
+4700,WB,Crawford at Helene
+4121,EB,Crawford at Whenona
+4986,WB,Crawford at Whenona
+4847,EB,Crescent at Allied
+4990,WB,Crescent at Allied
+9539,WB,Crossroads at City View
+9118,EB,Crossroads at High Crossing
+9349,NB,Crossroads at Park Bank
+9412,SB,Crossroads at Park Bank
+9615,NB,Crossroads at Wall
+9720,SB,Crossroads at Wall
+7121,NB,Crystal at Diamond
+7184,SB,Crystal at Diamond
+1174,WB,Dayton at State
+6633,NB,Deming at Blackhawk
+6660,SB,Deming at Blackhawk
+6427,NB,Deming at Excelsior
+6402,WB,Deming at Gialamas
+6585,WB,Deming at Gialamas
+6218,SB,Deming at John Deere
+6511,NB,Deming at John Deere
+7446,WB,Dennett at Dempsey
+7466,WB,Dennett at Ring
+7767,EB,Dennett at Ring
+1126,SB,Division at Eastwood
+1784,SB,Division at Oakridge
+1995,NB,Division at Oakridge
+7128,WB,Dominion at Galileo
+7377,EB,Dominion at Galileo
+7628,WB,Dominion at Sprecher
+7163,EB,Dominion at Traveler
+7814,WB,Dominion at Traveler
+6449,WB,D'Onofrio at High Point
+6121,NB,D'Onofrio at Mineral Point
+6440,SB,D'Onofrio at Mineral Point
+6783,WB,D'Onofrio at West Towne
+6848,SB,D'Onofrio at West Towne
+1189,EB,Doty at Pinckney
+6164,WB,Driveway at Prairie Towne
+6661,EB,Driveway at Prairie Towne
+3721,EB,Dutch Mill at Ellestad
+3195,EB,Dutch Mill at Park And Ride
+9207,EB,Dwight at Independence
+9677,EB,East Towne at Eagan
+9422,WB,East Towne at Independence
+9783,EB,East Towne at Independence
+9348,SB,East Towne at Springs
+9351,NB,East Towne at Springs
+9391,EB,East Towne at Zeier
+9928,WB,East Towne at Zeier
+9932,EB,Eastpark at Broadview
+9147,EB,Eastpark at Park And Ride
+2121,NB,Eau Claire at Regent
+6165,NB,Excelsior at Associated Bank
+6796,SB,Excelsior at Associated Bank
+6149,SB,Excelsior at Fourier
+6490,SB,Excelsior at Old Sauk
+6527,NB,Excelsior at Old Sauk
+1587,EB,Fair Oaks at Atwood
+1353,EB,Fair Oaks at Capital City
+1640,WB,Fair Oaks at Capital City
+1420,SB,Fair Oaks at Chicago
+1873,NB,Fair Oaks at Chicago
+9203,NB,Fair Oaks at Commercial N
+9288,SB,Fair Oaks at Commercial N
+9693,NB,Fair Oaks at Lexington
+9802,SB,Fair Oaks at Lexington
+1555,NB,Fair Oaks at Milwaukee
+1984,WB,Fair Oaks at Milwaukee
+9111,NB,Fair Oaks at Washington
+9564,SB,Fair Oaks at Washington
+1146,SB,Fairchild at Washington
+3299,EB,Femrite at Dutch Mill
+1624,SB,First at Johnson
+1125,NB,First at Main
+1372,SB,First at Main
+1849,WB,First at Washington
+0170,SB,Fish Hatchery at Catalpa
+0530,SB,Fish Hatchery at Cedar
+4790,SB,Fish Hatchery at Greenway
+0146,SB,Fish Hatchery at Midland
+0266,SB,Fish Hatchery at Park
+0643,NB,Fisher at Bram
+0171,NB,Fisher at Dane
+9857,NB,Forest Run at Anniversary
+9211,NB,Forest Run at Forest Ridge
+9480,SB,Forest Run at Forest Ridge
+9842,WB,Forest Run at Hayes
+9977,EB,Forest Run at Hayes
+0969,NB,Frances at Johnson
+3311,NB,Freese at Siggelkow
+6480,SB,Gammon at Colony
+6501,NB,Gammon at Tree
+8733,NB,Gammon at Watts
+6631,EB,Ganser at D'Onofrio
+6926,SB,Ganser at Mineral Point
+6751,EB,Gialamas at Greenway
+8742,SB,Gilbert at Gilbert
+0110,WB,Gilson at Beld
+0570,SB,Gilson at Cedar
+0821,NB,Gilson at Cedar
+0357,NB,Gilson at Olin
+0694,SB,Gilson at Olin
+4360,SB,Grandview at Beltline S
+4466,SB,Grandview at Kingston
+4914,SB,Grandview at Sandwood
+4131,EB,Greenway at Applegate
+4955,EB,Greenway at Fish Hatchery
+1404,SB,Hamilton at Gorham
+1966,SB,Hamilton at Johnson
+8614,WB,Hammersley at Brookwood
+8915,EB,Hammersley at Frisch
+8940,WB,Hammersley at Frisch
+8604,WB,Hammersley at Gilbert
+8827,EB,Hammersley at Gilbert
+8594,WB,Hammersley at Lewon
+8721,EB,Hammersley at Lewon
+8471,EB,Hammersley at Mckenna
+8191,EB,Hammersley at Prairie
+8738,WB,Hammersley at Prairie
+8207,EB,Hammersley at Rae
+8154,WB,Hammersley at Reetz
+8628,WB,Hammersley at Saalsaa
+8839,EB,Hammersley at Saalsaa
+8661,EB,Hammersley at Whitcomb
+8770,WB,Hammersley at Whitcomb
+8857,EB,Hammersley at Whitney
+7161,EB,Hargrove at Tulane
+7926,WB,Hargrove at Tulane
+8170,SB,Hathaway at Greenwich
+8491,NB,Hathaway at Greenwich
+8236,SB,Hathaway at Schroeder
+9186,NB,Hayes at Dawn
+9396,WB,Hayes at Morningside
+2500,WB,Heather at Hilldale Mall
+2501,EB,Heather at Hilldale Mall
+4085,NB,Helene at Britta
+4582,SB,Helene at Britta
+7199,EB,Helgesen at Advance
+7662,WB,Helgesen at Advance
+7277,EB,Helgesen at Stoughton E
+9264,SB,High Crossing at Crossroads
+6338,WB,High Point at Big Sky
+6767,SB,High Point at Big Sky
+6827,NB,High Point at D'Onofrio
+6596,WB,High Point at Mineral Point
+6120,NB,High Point at Old Sauk
+3793,NB,Hoboken at Broadway
+9741,EB,Hoepker at Merchant
+5100,SB,Huxley at North Transfer
+9226,SB,Independence at East Towne
+3351,EB,Industrial at Royal
+3538,WB,Industrial at Royal
+6435,SB,Inner at Colony
+6874,NB,Inner at Colony
+6323,EB,Inner at Gettysburg
+6752,WB,Inner at Gettysburg
+6148,WB,Inner at Yellowstone
+6459,EB,Inner at Yellowstone
+9488,SB,International at 2901
+9729,EB,International at 2901
+9493,NB,International at American
+9790,SB,International at American
+9107,EB,International at Anderson
+9562,WB,International at Anderson
+9168,SB,International at Darwin
+9381,EB,International at Packers
+7830,SB,Inwood at Open Wood
+7907,NB,Inwood at Open Wood
+6858,SB,Island at Mineral Point
+6997,NB,Island at Mineral Point
+0650,EB,John Nolen at Rimrock
+1468,WB,King at Wilson
+1737,EB,King at Wilson
+7919,NB,Kings Mill at Buckeye
+0819,EB,Koster at Ardmore
+0871,EB,Koster at Bram
+0926,SB,Lake at University
+3196,WB,Lake Point at Bridge
+3323,EB,Lake Point at Bridge
+3216,WB,Lake Point at Hoboken
+3419,EB,Lake Point at Hoboken
+3100,WB,Lake Point at Weber
+3101,EB,Lake Point at Weber
+7416,EB,Langley at Cottontail
+7558,SB,Langley at Dell
+9220,WB,Lien at Eagan
+9231,EB,Lien at Parkside
+9524,WB,Lien at Parkside
+9192,WB,Lien at Thierer
+9849,EB,Lien at Thierer
+9685,EB,Lien at Washington
+5306,WB,Londonderry at Dryden
+5356,WB,Londonderry at Packers
+1823,EB,Main at Pinckney
+8163,NB,Manchester at Hartford
+8375,NB,Manchester at Mckee
+8644,SB,Manchester at Mckee
+8580,SB,Manchester at Thornebury
+8747,NB,Manchester at Thornebury
+8137,EB,Manchester at Westin
+8306,WB,Manchester at Westin
+5473,EB,Manitowish at Burning Wood
+5214,SB,Manitowish at Comanche
+3952,SB,Marsh at Calico
+3758,SB,Marsh at Kipp
+3620,SB,Marsh at Voges
+3740,SB,Marsh at Yesterday
+6239,EB,Masthead at Island
+6564,WB,Masthead at Island
+8739,NB,Mckenna at Carnwood
+8194,SB,Mckenna at Lancaster
+8855,EB,Mckenna at Lancaster
+8985,NB,Mckenna at Pilgrim
+9000,NB,Mckenna at Pilgrim
+8441,EB,Mckenna at Yorktown
+8818,WB,Mckenna at Yorktown
+9545,EB,Melody at Independence
+9313,EB,Melody at Portage
+9463,EB,Melody at Stuart
+5126,WB,Menomonie at Chinook
+5628,WB,Menomonie at Comanche
+7154,SB,Merryturn at Kevins
+7733,NB,Merryturn at Kevins
+7365,NB,Merryturn at Queensbridge
+7590,SB,Merryturn at Queensbridge
+7214,SB,Merryturn at Retana
+7447,NB,Merryturn at Retana
+7699,NB,Merryturn at Spicebush
+7762,SB,Merryturn at Spicebush
+7230,SB,Merryturn at Sudbury
+7723,NB,Merryturn at Sudbury
+4342,SB,Midvale at Cherokee
+4551,NB,Midvale at Cherokee
+2741,NB,Midvale at Heather
+2362,SB,Midvale at Hilldale Row
+4355,NB,Midvale at Nakoma
+2634,SB,Midvale at Odana
+2194,SB,Midvale at Regent
+2337,NB,Midvale at Regent
+2812,SB,Midvale at University
+4176,SB,Midvale at Yuma
+4865,NB,Midvale at Yuma
+1310,WB,Mifflin at Carroll
+0104,SB,Mills at Dayton
+0837,NB,Mills at Dayton
+0731,NB,Mills at Regent
+0392,SB,Mills at Spring
+0445,NB,Mills at Spring
+0256,SB,Mills at University
+0773,NB,Mills at University
+6941,EB,Mineral Point at Island
+2638,WB,Mineral Point at Midvale
+2472,WB,Mineral Point at Robin
+2975,EB,Mineral Point at Robin
+2647,EB,Mineral Point at Segoe
+1872,SB,MLK at City-County Building
+4340,WB,Mohawk at Danbury
+4743,EB,Mohawk at Danbury
+4851,EB,Mohawk at Nakoma
+4149,EB,Mohawk at Seminole
+4770,WB,Mohawk at Seminole
+4916,WB,Mohawk at Whenona
+4927,EB,Mohawk at Whenona
+6300,WB,Nautilus at Offshore
+3241,EB,Nob Hill at E A Bldg
+3564,WB,Nob Hill at E A Bldg
+7258,WB,North Star at Copernicus
+7443,EB,North Star at Copernicus
+7531,NB,North Star at Dominion
+7940,SB,North Star at Dominion
+7526,WB,North Star at Orion
+7931,EB,North Star at Orion
+7415,NB,North Star at Sharpsburg
+7778,SB,North Star at Sharpsburg
+5607,EB,Northland at Delaware
+5797,EB,Northland at Judy
+5105,EB,Northland at Mandrake
+5482,WB,Northport at Barby
+5520,WB,Northport at Goodland
+5138,WB,Northport at Northside Town
+5414,WB,Northport at Troy
+1973,NB,Oak at Commercial
+1774,SB,Oak at Washington
+1777,NB,Oak at Washington
+1457,EB,Oakridge at Evergreen
+1998,WB,Oakridge at Evergreen
+1386,WB,Oakridge at Maple
+1519,EB,Oakridge at Maple
+1191,EB,Oakridge at Miller
+1484,WB,Oakridge at Miller
+2119,EB,Odana at Charles
+2786,WB,Odana at Charles
+2253,EB,Odana at Dearholt
+2302,WB,Odana at Dearholt
+2224,WB,Odana at Hilltop
+2729,EB,Odana at Hilltop
+2872,WB,Odana at Midvale
+2801,EB,Odana at Segoe
+2946,WB,Odana at Segoe
+2597,EB,Odana at Wedgewood
+2732,WB,Odana at Wedgewood
+2379,EB,Odana at Whitney
+6447,EB,Offshore at Nautilus
+6244,WB,Offshore at Yellowstone
+6351,EB,Offshore at Yellowstone
+2513,EB,Old Middleton at Eau Claire
+2902,WB,Old Middleton at Eau Claire
+2235,NB,Old Middleton at Highlands
+2345,NB,Old Middleton at Highlands
+2391,NB,Old Middleton at Norman
+2747,NB,Old Middleton at Old Sauk
+6173,EB,Old Sauk at Excelsior
+6474,WB,Old Sauk at Excelsior
+6588,WB,Old Sauk at High Point
+0424,WB,Olin at Colby
+0602,WB,Olin at Gilson
+0192,WB,Olin at Hickory
+0674,WB,Olin at John Nolen
+0346,WB,Olin at Lake
+0522,WB,Olin at Quann
+1278,SB,Packers at Commercial
+8200,WB,Pilgrim at Mckenna
+8551,EB,Pilgrim at Pilgrim
+8654,WB,Pilgrim at Pilgrim
+8308,WB,Pilgrim at Prairie
+8149,EB,Pilgrim at Sara
+8304,WB,Pilgrim at Sara
+1495,NB,Pinckney at Mifflin
+8548,WB,Piping Rock at Brookwood
+8960,SB,Piping Rock at Hathaway
+9282,SB,Portage at Derek
+9834,WB,Portage at Hayes
+9494,SB,Portage at Rieder
+9154,WB,Portage at Tomscot
+9132,WB,Portage at Village
+4268,WB,Post at Latham
+4945,EB,Post at Todd
+4322,WB,Post at Watford
+8664,SB,Prairie at Hammersley
+8253,NB,Prairie at Jacobs
+8956,SB,Prairie at Jacobs
+8919,NB,Prairie at Lomax
+8944,SB,Prairie at Lomax
+8592,WB,Prairie at Maple Valley
+8849,EB,Prairie at Maple Valley
+8829,NB,Prairie at Pilgrim
+8157,NB,Prairie at Pioneer
+8606,SB,Prairie at Pioneer
+8239,NB,Prairie at Raymond
+8826,SB,Prairie at Raymond
+8230,WB,Prairie at Waterford
+8617,EB,Prairie at Waterford
+6868,WB,Q Hammons at H C Bldg
+0245,NB,Randall at Engineering
+6277,NB,Randolph at Tree
+6450,SB,Randolph at Tree
+6130,SB,Randolph at Westward
+6253,NB,Randolph at Westward
+8478,EB,Rayovac at Exact
+8931,WB,Rayovac at Exact
+8145,NB,Rayovac at Schroeder
+2138,WB,Regent at Eau Claire
+2477,EB,Regent at Eau Claire
+2196,WB,Regent at Glen
+2639,EB,Regent at Glen
+2153,EB,Regent at Kenosha
+2228,WB,Regent at Kenosha
+0608,WB,Regent at Park
+2515,EB,Regent at Rennebohm
+2796,WB,Regent at Rennebohm
+2183,EB,Regent at Rock
+2278,WB,Regent at Rock
+2109,EB,Regent at Rosa
+2840,WB,Regent at Segoe
+2201,EB,Regent at Whitney
+2366,WB,Regent at Whitney
+1260,SB,Rogers at Rutledge
+2400,SB,Rosa at Driftwood
+2603,NB,Rosa at Driftwood
+2385,NB,Rosa at Marconi
+2944,SB,Rosa at Marconi
+2535,NB,Rosa at Mineral Point
+2567,NB,Rosa at Old Middleton
+2824,WB,Rosa at Old Middleton
+2351,NB,Rosa at Regent
+2738,SB,Rosa at Regent
+2162,SB,Rosa at Stadium
+2449,NB,Rosa at Stadium
+1410,WB,Roth at Ruskin
+0150,SB,Rusk at Nygard
+0294,SB,Rusk at Rusk
+1448,WB,Rutledge at Rogers
+1256,SB,Rutledge at Walton
+1695,NB,Rutledge at Walton
+6615,EB,Sawmill at Gammon
+6854,WB,Sawmill at Gammon
+6780,WB,Sawmill at Ramsgate
+6817,EB,Sawmill at Ramsgate
+6309,EB,Sawmill at Westfield
+6910,WB,Sawmill at Westfield
+5173,NB,School at Fulton
+5620,SB,School at Fulton
+5127,NB,School at Havey
+5814,SB,School at Havey
+5370,SB,School at Northland
+5625,NB,School at Northland
+5765,NB,School at Northport
+2701,NB,Science at Science
+2982,SB,Science at Science
+2344,WB,Science at W Health
+2625,EB,Science at W Health
+2115,EB,Science at Whitney
+2199,NB,Segoe at Heather
+2752,SB,Segoe at Heather
+2219,NB,Segoe at Regent
+4830,SB,Seminole at Doncaster
+4929,NB,Seminole at Doncaster
+7465,EB,Severn at Thompson
+7624,WB,Severn at Thompson
+5816,SB,Sherman at Delaware
+1296,SB,Sherman at Mcguire
+5741,NB,Sherman at Northport
+1838,SB,Sherman at Sherman
+5236,SB,Sherman at Tennyson
+1354,SB,Sherman at Thornton
+5444,SB,Sherman at Wheeler
+1762,SB,Sixth at Washington
+3235,SB,Ski at Novation
+3371,NB,Ski at Novation
+1304,WB,Spaight at Dickinson
+1813,EB,Spaight at Dickinson
+7752,SB,Sprecher at Dominion
+0750,WB,Spring at Park
+9310,SB,Springs at Cracker Barrel
+9140,EB,Springs at High Crossing
+9620,WB,Springs at Plumbers 75
+7180,WB,Starker at Acewood
+7188,WB,Starker at Angel Crest
+7343,EB,Starker at Angel Crest
+7601,EB,Starker at Vondron
+7766,WB,Starker at Vondron
+7513,EB,Starker at Woodvale
+7916,WB,Starker at Woodvale
+1558,WB,State at Dayton
+0506,WB,State at Frances
+0505,EB,State at Gilman
+0688,WB,State at Gilman
+0549,EB,State at Gorham
+0803,EB,State at Johnson
+0898,WB,State at Johnson
+0265,EB,State at Lake
+4415,EB,Stewart at Latham
+7168,WB,Stoughton E at Dean East
+7645,EB,Stoughton E at Dean East
+7489,NB,Stoughton E at Helgesen
+7384,SB,Stoughton W at Pflaum
+7807,NB,Stoughton W at Pflaum
+7802,SB,Stoughton W at Tompkins
+8650,SB,Struck at Watts
+9811,NB,Swanton at Easley
+9880,SB,Swanton at Easley
+9167,NB,Swanton at Milwaukee
+9174,SB,Swanton at Milwaukee
+9652,WB,Swanton at Thompson
+9113,EB,Terrace at 5117
+9527,SB,Terrace at Eastpark
+9581,NB,Terrace at Herzing
+9901,NB,Terrace at W Health
+7680,SB,Thompson at 1306
+7151,NB,Thompson at 1309
+7255,NB,Thompson at Buckeye
+7792,SB,Thompson at Buckeye
+7117,NB,Thompson at Droster
+7906,SB,Thompson at Droster
+7550,WB,Thompson at Forge
+7895,EB,Thompson at Forge
+7507,NB,Thompson at Grafton
+7840,SB,Thompson at Grafton
+9181,EB,Thompson at Kurt
+9234,WB,Thompson at Kurt
+9323,EB,Thompson at Meadows
+9604,WB,Thompson at Meadows
+7310,SB,Thompson at Milwaukee
+9785,NB,Thompson at Milwaukee
+7325,NB,Thompson at Rustic Wood
+7760,SB,Thompson at Rustic Wood
+9277,NB,Thompson at Swanton
+9568,SB,Thompson at Swanton
+7661,EB,Thompson at Vondron
+2248,SB,Toepfer at Birch
+2435,NB,Toepfer at Meyer
+2874,SB,Toepfer at Mineral Point
+2174,SB,Toepfer at Saint Clair
+2387,NB,Toepfer at Saint Clair
+2316,SB,Toepfer at Tokay
+2889,NB,Toepfer at Tokay
+2233,EB,Tokay at Chatham
+2336,WB,Tokay at Chatham
+2390,WB,Tokay at Frederick
+2431,EB,Tokay at Frederick
+2111,EB,Tokay at Midvale
+6265,NB,Tokay at Odana
+6296,WB,Tokay at W Research Park
+6423,NB,Tokay at W Research Park
+6100,WB,Tokay at West Transfer
+7272,WB,Tompkins at Alder
+7917,EB,Tompkins at Alder
+7653,EB,Tompkins at Groveland
+7758,WB,Tompkins at Groveland
+7260,WB,Tompkins at Herro
+7903,EB,Tompkins at Herro
+7287,EB,Tompkins at Maher
+7494,WB,Tompkins at Maher
+7525,EB,Tompkins at Stoughton W
+6787,NB,Towne Ring at Chilis
+9800,NB,Towne Ring at Towne Mall
+6681,EB,Tree at High Point
+6499,EB,Tree at Westfield
+2370,WB,University at Segoe
+2465,EB,University at University Bay
+2359,EB,University at Whitney
+2601,NB,University Row at University
+3487,NB,Valor at Eagles Perch
+3799,NB,Valor at Meinders
+3273,WB,Valor at Star Spangled
+3645,NB,Valor at Valor
+4714,WB,Verona E at Red Arrow
+7987,NB,Vondron at A T C P Bldg
+7213,NB,Vondron at Buckeye
+7764,SB,Vondron at Buckeye
+7822,SB,Vondron at Dolores
+7861,NB,Vondron at Dolores
+7583,NB,Vondron at Mustang
+7223,NB,Vondron at Thompson
+1214,WB,Washington at Blair
+0113,EB,Washington at Brittingham
+0770,WB,Washington at Brittingham
+1790,WB,Washington at Fairchild
+0633,EB,Washington at Park
+0225,EB,Washington at Park View
+0516,WB,Washington at Regent
+9133,EB,Washington at Reindahl
+9344,WB,Washington at Reindahl
+9225,EB,Washington at Schmedeman
+9750,WB,Washington at Schmedeman
+9897,EB,Washington at Wright
+9161,NB,Washington N at Springs
+8751,EB,Waterford at Manchester
+4712,SB,Watford at Stewart
+8313,EB,Watts at Struck
+8582,WB,Watts at Struck
+8409,EB,Watts at Woodmans
+1135,NB,Webster at Mifflin
+6281,EB,West Towne at D'Onofrio
+6533,EB,West Towne at Kohls
+,NB,Westfield at Mineral Point
+6327,NB,Westfield at Old Sauk
+6466,SB,Westfield at Old Sauk
+8845,EB,Westin at Maple Grove
+5349,EB,Wheeler at Comanche
+5299,EB,Wheeler at Delaware
+5702,WB,Wheeler at Delaware
+5347,EB,Wheeler at Golf View
+5845,EB,Wheeler at Ilene
+5725,EB,Wheeler at Wheeler
+4122,SB,Whenona at Beltline S
+4957,NB,Whenona at Beltline S
+4643,NB,Whitney at Kroncke
+4654,SB,Whitney at Kroncke
+2383,NB,Whitney at Medical
+8428,SB,Whitney at Raymond
+2225,NB,Whitney at Sheboygan
+2630,SB,Whitney at Sheboygan
+2324,SB,Whitney at Westgate
+1480,WB,Williamson at Blount
+0313,EB,Wilson at Bassett
+0248,WB,Wilson at Carroll
+1839,EB,Wilson at Franklin
+1499,NB,Winnebago at Atwood
+1343,NB,Winnebago at Fourth
+1538,SB,Winnebago at Fourth
+1202,SB,Winnebago at Lafollette
+1659,NB,Winnebago at Lafollette
+1262,SB,Winnebago at Linden
+1575,NB,Winnebago at Linden
+7815,EB,World Dairy at Dairy
+9917,WB,Zeier at Global Market
+9863,NB,Zeier at Springs
+4436,WB,Brendan at Chapel Valley
+4701,EB,Brendan at Chapel Valley
+4999,EB,Brendan at Mickelson
+5000,EB,Brendan at Mickelson
+4218,SB,Carling at Verona E
+4197,NB,Chapel Valley at Mckee
+4522,SB,Chapel Valley at Mckee
+4282,WB,Cheryl at Fish Hatchery
+4769,EB,Crescent at Red Arrow
+4856,WB,Crescent at Red Arrow
+4821,NB,Fish Hatchery at Cheryl
+4936,SB,Fish Hatchery at Cheryl
+4625,NB,Fish Hatchery at Lacy
+4902,WB,Fish Hatchery at Mckee
+4862,SB,Fish Hatchery at Mickelson
+4138,WB,Hardrock at Limestone
+4641,EB,Hardrock at Limestone
+4711,NB,Hardrock at Mckee
+4822,SB,Hardrock at Mckee
+4182,WB,High Ridge at Cahill
+4993,NB,King James at Anton
+4151,EB,King James at King James
+4450,WB,King James at King James
+4258,SB,King James at Williamsburg
+4589,NB,King James at Williamsburg
+4573,EB,Lovell at Chalet Gardens
+4485,EB,Mckee at Fitchrona
+4260,WB,Mckee at Kapec
+4995,EB,Mckee at Kapec
+4301,NB,Mickelson at Brendan
+4395,EB,Mickelson at Fish Hatchery
+4824,WB,Mickelson at Fish Hatchery
+4163,NB,Mickelson at Walkway
+4660,SB,Mickelson at Walkway
+4953,EB,Post at Coho
+4910,WB,Post at Index
+4191,NB,Red Arrow at Jenewein
+4202,SB,Red Arrow at Jenewein
+4333,NB,Red Arrow at Pawnee
+4580,SB,Red Arrow at Pawnee
+4550,SB,Research Park at Cheryl
+4766,SB,Research Park at Lacy
+4788,SB,Royal Wulff at High Ridge
+4171,NB,Whitney at Williamsburg
+4972,WB,Williamsburg at Whitney
+6232,WB,Airport at Deming
+6369,EB,Airport at Deming
+6553,EB,Airport at Nursery
+6922,WB,Airport at Nursery
+6359,EB,Century at Laura
+6704,WB,Century at Laura
+6264,WB,Century at Parmenter
+6924,SB,Deming at Discovery
+6240,WB,Deming at Market
+6231,EB,Deming at Murphy
+6111,NB,Deming at Park Bank
+6470,SB,Deming at Park Bank
+6673,EB,Discovery at Deming
+6363,EB,Discovery at Parmenter
+6798,WB,Discovery at Parmenter
+6526,WB,Donna at Century
+6943,EB,Donna at Century
+6157,EB,Donna at Northbrook
+6372,WB,Donna at Northbrook
+6484,WB,Donna at Park
+6989,EB,Donna at Park
+6853,EB,Donna at Parmenter
+6109,EB,Fortune at Sweeney
+6364,WB,Fortune at Sweeney
+6458,WB,Franklin at Bristol
+6927,EB,Franklin at Bristol
+6421,EB,Franklin at Parmenter
+6750,NB,Gialamas at Deming
+6354,WB,Greenway at Aspen
+6889,EB,Greenway at Aspen
+6355,EB,Greenway at Deer Creek
+6838,WB,Greenway at Deming
+6141,NB,Greenway at Gialamas
+6282,SB,Greenway at Gialamas
+6906,WB,Greenway at Le Silve
+6965,EB,Greenway at Q Hammons
+6392,SB,High Point at Greenway
+6825,NB,High Point at Greenway
+6602,WB,Holiday at Q Hammons
+6138,WB,Market at Aspen
+6723,EB,Market at Aspen
+6311,EB,Market at Deming
+6644,WB,Mendota at Allen
+6406,WB,Mendota at Gateway
+6915,EB,Mendota at Gateway
+6142,WB,Mendota at University
+6717,EB,Mendota at University
+6196,SB,Middleton at South
+6947,NB,Middleton at South
+6345,NB,Middleton at Voss
+6438,WB,Montclair at Pleasant View
+6591,EB,Montclair at Pleasant View
+6808,WB,Murphy at Deming
+6226,WB,Murphy at Eagle
+6415,EB,Murphy at Eagle
+6475,NB,Northbrook at Century
+6758,SB,Northbrook at Century
+6529,NB,Northbrook at Donna
+6386,SB,Park at Donna
+6146,SB,Park at Pheasant Branch
+6635,NB,Park at Pheasant Branch
+6208,SB,Park Lawn at Franklin
+6639,NB,Park Lawn at Franklin
+6471,NB,Park Lawn at Maywood
+6856,SB,Park Lawn at Maywood
+6163,NB,Parview at Murphy
+6844,SB,Parview at Murphy
+6270,SB,Pinehurst at Greenview
+6655,NB,Pinehurst at Greenview
+6479,NB,Pleasant View at Airport
+6908,SB,Pleasant View at Airport
+6182,SB,Pleasant View at Fairway
+6775,NB,Pleasant View at Fairway
+6652,SB,Pleasant View at T C Building
+6851,NB,Pleasant View at T C Building
+6884,SB,Q Hammons at Greenway
+6811,NB,Q Hammons at Holiday
+6918,WB,Q Hammons at Holiday
+6433,EB,Quarry at Research
+6562,WB,Quarry at Research
+6150,WB,Terrace at High Point
+6313,EB,Terrace at High Point
+6592,WB,Terrace at Middleton
+6785,EB,Terrace at Middleton
+6441,EB,Terrace at Parmenter
+6966,WB,Terrace at Parmenter
+6698,WB,University at Allen
+6213,SB,University at Branch
+6162,WB,University at Bristol
+6643,EB,University at Bristol
+6147,WB,University at Gateway
+6322,SB,University at Gateway
+6335,WB,University at Lakeview
+6420,EB,University at Maple
+6134,WB,University at Park
+6542,WB,University at Parmenter
+6607,EB,University at Parmenter
+6828,WB,University Green at Pleasant View
+6845,EB,University Green at Pleasant View
+6325,EB,Voss at Middleton
+3240,WB,Industrial at South Towne
+3931,EB,Industrial at South Towne
+2698,WB,University at University Bay
+9148,WB,Blue Aster at Grand
+9726,WB,Blue Aster at Legacy
+9953,EB,Blue Aster at Legacy
+9894,SB,Hoepker at Legacy
+9580,WB,Hoepker at Merchant
+9418,SB,Hoepker at Prairie Lakes
+9639,NB,Hoepker at Prairie Lakes
+9227,NB,Legacy at Hoepker
+9258,WB,Main at Grand
+9242,WB,Main at Highway Ramp
+9871,EB,Main at Highway Ramp
+9504,WB,Main at Thompson
+5982,WB,Wheeler at Ilene

@@ -1,0 +1,107 @@
+---
+output: 
+  pdf_document:
+    latex_engine: xelatex
+params:
+  stop_id: 2488
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, error = FALSE)
+```
+
+\begin{huge}
+\textbf{This bus stop is closing June 11}
+\end{huge}
+
+Starting June 11, Metro's bus network will change a lot. Buses will be faster and there will fewer transfers for most. But this stop will be closing permanently.
+
+```{r warning=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tidytransit)
+library(OpenStreetMap)
+
+routes_new <- read_rds("data/routes_new.rds")
+
+# read in closed stops
+closed_stops <- read_csv("data/busstop-closedlist.csv") |>
+  rename(stop_id = `Stop ID`,
+         direction = Direction,
+         stop_name = `Stop Name`)
+
+#geocode stops with GTFS files
+gtfs <- read_gtfs("data/metro-2023-04-17-gtfs.zip")
+
+stops <- gtfs$stops
+
+# doing an inner join because the closure list has separate IDs for each direction of a stop
+# but the GTFS file does not
+# closure list also has a bunch of stops that currently don't have service
+closed_stops_sf <- closed_stops |>
+  inner_join(stops, by = c("stop_id" = "stop_code")) |>
+  st_as_sf(coords = c("stop_lon", "stop_lat"))
+
+# next we need all the stops that will still have service after the redesign
+open_stops <- stops |>
+  anti_join(closed_stops, by = c("stop_code" = "stop_id")) |>
+  st_as_sf(coords = c("stop_lon", "stop_lat"))
+st_crs(open_stops) <- 4326
+st_crs(closed_stops_sf) <- 4326
+
+#filter to the stop defined in the input parameter
+
+closed_stop <- closed_stops_sf |> 
+  filter(stop_id == params$stop_id)
+
+#create 1km buffer around closed stop
+closed_stop_buffered <- closed_stop |> 
+  st_buffer(dist = 1000)
+
+x <- open_stops |> 
+  st_filter(closed_stop_buffered, .predicate = st_intersects)
+
+stop_desc <- paste0(closed_stop_buffered$stop_name.x, 
+                   " (",
+                   closed_stop_buffered$stop_id,
+                   ").")
+```
+
+This is stop `r stop_desc`
+
+The map below shows the nearest stops that will still be open. Find out more at mymetrobus.com/redesign or call 608 266 4466.
+
+```{r}
+
+library(tmaptools)
+osm <- tmaptools::read_osm(bb(st_union(x, closed_stop)), ext=1.1)
+tmap_mode("plot")
+tm_shape(osm) +
+tm_rgb(alpha = .4) +
+  tm_shape(closed_stop_buffered) +
+  tm_dots("darkgrey", size = 2) +
+  tm_shape(closed_stop) +
+  tm_symbols("red", shape = 4, size = 3) +
+  tm_shape(x) +
+  tm_dots("darkgrey", size = 1, alpha = .7) +
+  tm_shape(routes_new) +
+  tm_lines("route_short_name",lwd = 2)
+```
+
+```{r}
+x |> 
+  rowwise() |> 
+  mutate(dist = st_distance(geometry, closed_stop),
+         dist_mi = units::set_units(dist, mile)) |> 
+  select(stop_name, stop_id, dist_mi) |> 
+  st_drop_geometry() |> 
+  arrange(dist_mi) |> 
+  head(10) |> 
+  knitr::kable()
+
+```
+
+
+This sign brought to you by Friends of Metro.
