@@ -76,18 +76,24 @@ The map below shows the nearest stops that will still be open. Find out more at 
 ```{r}
 
 library(tmaptools)
-osm <- tmaptools::read_osm(bb(st_union(x, closed_stop)), ext=1.1)
+osm <- tmaptools::read_osm(bb(st_union(x, closed_stop)), ext=1.1, type = "stamen-toner")
+
+routes_local <- routes_new |> 
+  st_crop(bb(st_union(x, closed_stop), ext = 1.1))
 tmap_mode("plot")
 tm_shape(osm) +
 tm_rgb(alpha = .4) +
   tm_shape(closed_stop_buffered) +
-  tm_dots("darkgrey", size = 2) +
+  tm_symbols("darkgrey", shape = 15, size = 2) +
   tm_shape(closed_stop) +
   tm_symbols("red", shape = 4, size = 3) +
   tm_shape(x) +
-  tm_dots("darkgrey", size = 1, alpha = .7) +
-  tm_shape(routes_new) +
-  tm_lines("route_short_name",lwd = 2)
+  tm_dots("black", size = 1, alpha = .7) +
+  tm_shape(routes_local) +
+  tm_lines("route_short_name", lwd = 3, drop.levels = T,
+           title.col  = "Routes",
+           palette = "viridis") +
+  tm_layout(legend.outside = T)
 ```
 
 ```{r}

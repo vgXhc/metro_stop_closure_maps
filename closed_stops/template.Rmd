@@ -3,7 +3,9 @@ output:
   pdf_document:
     latex_engine: xelatex
 params:
-  stop_id: 2488
+  stop_id: 2239
+header-includes:
+  - \usepackage[fontsize=14.4]{fontsize}
 ---
 
 ```{r setup, include=FALSE}
@@ -14,14 +16,16 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, error = FA
 \textbf{This bus stop is closing June 11}
 \end{huge}
 
-Starting June 11, Metro's bus network will change a lot. Buses will be faster and there will fewer transfers for most. But this stop will be closing permanently.
+Starting June 11, Metro's bus network will change a lot. Buses will be faster and there will fewer transfers. But this stop will be closing permanently.
 
 ```{r warning=FALSE}
 library(tidyverse)
 library(sf)
 library(tmap)
 library(tidytransit)
-library(OpenStreetMap)
+library(tmaptools)
+
+routes_new <- readRDS("routes_new.rds")
 
 # read in closed stops
 closed_stops <- read_csv("busstop-closedlist.csv") |>
@@ -44,6 +48,7 @@ closed_stops_sf <- closed_stops |>
 # next we need all the stops that will still have service after the redesign
 open_stops <- stops |>
   anti_join(closed_stops, by = c("stop_code" = "stop_id")) |>
+  filter(!stop_code %in% c("WeTP", "EaTP", "NoTP", "SoTP")) |> 
   st_as_sf(coords = c("stop_lon", "stop_lat"))
 st_crs(open_stops) <- 4326
 st_crs(closed_stops_sf) <- 4326
@@ -66,37 +71,48 @@ stop_desc <- paste0(closed_stop_buffered$stop_name.x,
                    ").")
 ```
 
-This is stop `r stop_desc`
+This is stop \textbf{`r stop_desc`}
 
-The map below shows the nearest stops that will still be open. Find out more at mymetrobus.com/redesign or call 608 266 4466.
+The map below shows the nearest stops that will still be open. Find out more at mymetrobus.com/redesign or call (608) 266-4466.
 
 ```{r}
-
-library(tmaptools)
-osm <- tmaptools::read_osm(bb(st_union(x, closed_stop)), ext=1.1)
+osm <- tmaptools::read_osm(bb(st_union(x, closed_stop)), ext=1.1,
+                           type = "stamen-toner")
+# crop routes to only the ones in the map's BB
+routes_local <- routes_new |> 
+  st_crop(bb(st_union(x, closed_stop), ext = 1.1))
 tmap_mode("plot")
 tm_shape(osm) +
 tm_rgb(alpha = .4) +
   tm_shape(closed_stop_buffered) +
-  tm_dots("darkgrey", size = 2) +
+  tm_symbols("darkgrey", shape = 15, size = 2) +
   tm_shape(closed_stop) +
-  tm_symbols(shape = 4, size = 3) +
+  tm_symbols("red", shape = 4, size = 3) +
   tm_shape(x) +
-  tm_dots("darkgrey", size = 1, alpha = .7)
+  tm_dots("black", size = 1, alpha = .7) +
+  tm_shape(routes_local) +
+  tm_lines("route_short_name", lwd = 3, drop.levels = T,
+           title.col  = "Routes",
+           palette = "viridis") +
+  tm_layout(legend.outside = T)
 ```
+
+The 10 nearest stops are:
 
 ```{r}
 x |> 
   rowwise() |> 
   mutate(dist = st_distance(geometry, closed_stop),
-         dist_mi = units::set_units(dist, mile)) |> 
+         dist_mi = round(as.numeric(units::set_units(dist, mile)), 1)) |> 
   select(stop_name, stop_id, dist_mi) |> 
   st_drop_geometry() |> 
   arrange(dist_mi) |> 
   head(10) |> 
-  knitr::kable()
+  knitr::kable(
+    col.names = c("Stop name", "#", "Distance (miles)")
+  )
 
 ```
 
 
-This sign brought to you by Friends of Metro.
+This sign brought to you by Friends of Metro. We love transit.

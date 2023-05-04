@@ -10,7 +10,7 @@
 library(shiny)
 library(tidyverse)
 library(sf)
-library(tmap)
+
 library(tidytransit)
 
 # read in closed stops
@@ -23,6 +23,8 @@ closed_stops <- read_csv("data/busstop-closedlist.csv") |>
 gtfs <- read_gtfs("data/metro-2023-04-17-gtfs.zip")
 
 stops <- gtfs$stops
+
+new_routes <- read_rds("data/routes_new.rds")
 
 # doing an inner join because the closure list has separate IDs for each direction of a stop
 # but the GTFS file does not
@@ -69,7 +71,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$downloadPdf <- downloadHandler(
-      filename = "report.pdf",
+      filename = paste0(input$stopId, "_closure_sign.pdf"),
       content = function(file) {
         # Copy the report file and data to a temporary directory before processing it, in
         # case we don't have write permissions to the current working dir (which
@@ -79,6 +81,7 @@ server <- function(input, output) {
         file.copy("template.Rmd", file.path(temp_dir, "report.Rmd"), overwrite = TRUE)
         file.copy("data/busstop-closedlist.csv", temp_dir)
         file.copy("data/metro-2023-04-17-gtfs.zip", temp_dir)
+        file.copy("data/routes_new.rds", temp_dir)
 
         # Set up parameters to pass to Rmd document
         params <- list(stop_id = input$stopId)
