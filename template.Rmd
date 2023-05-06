@@ -1,0 +1,103 @@
+---
+output: 
+  pdf_document:
+    latex_engine: xelatex
+mainfont: LiberationSans
+header-includes:
+  - \usepackage[fontsize=14.4]{fontsize}
+  - \setlength\parindent{0pt}
+  - \usepackage{geometry}
+  - \geometry{top=0.5in,headsep=0pt,bottom=0.5in}
+  
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, error = FALSE)
+knitr::knit_hooks$set(inline = function(x) {
+  return(gsub(pattern = "&", 
+              replacement = "\\&", 
+              x = x, 
+              fixed = TRUE))
+})
+```
+\thispagestyle {empty}
+\begin{huge}
+\textbf{This bus stop is closing June 11}
+\end{huge}
+
+
+
+```{r warning=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tmaptools)
+
+#filter to the stop defined in the input parameter
+
+closed_stop <- closed_stops_sf |> 
+  filter(stop_id == params$stop_id)
+
+#find open stops within 1km
+nearby_stops <- open_stops |> 
+  st_filter(closed_stop, .predicate = st_is_within_distance, dist = 1000)
+
+# if no stops within 1k, increase distance
+if (nrow(nearby_stops) == 0) {
+  nearby_stops <- open_stops |> 
+  st_filter(closed_stop, .predicate = st_is_within_distance, dist = 1500)
+}
+
+if (nrow(nearby_stops) == 0) {
+  nearby_stops <- open_stops |> 
+  st_filter(closed_stop, .predicate = st_is_within_distance, dist = 2000)
+}
+
+stop_desc <- paste0(closed_stop$stop_name.y, 
+                   " (",
+                   closed_stop$stop_id,
+                   ")")
+```
+
+Starting June 11, Metro's bus network will change a lot. Buses will be faster and there will fewer transfers. But this stop, \textbf{`r stop_desc`}, will be closing permanently.
+
+These nearby stops will still be open. Find out more at mymetrobus.com/redesign or call (608) 266-4466.
+
+```{r fig.align = 'center'}
+osm <- tmaptools::read_osm(bb(st_union(nearby_stops, closed_stop)), ext=1.1,
+                           type = "stamen-toner", zoom = 15)
+# crop routes to only the ones in the map's BB
+routes_local <- routes_new |> 
+  st_crop(bb(st_union(nearby_stops, closed_stop), ext = 1.1))
+tmap_mode("plot")
+tm_shape(osm) +
+tm_rgb(alpha = .4) +
+  tm_shape(closed_stop) +
+  tm_symbols("darkgrey", shape = 15, size = 2) +
+  tm_shape(closed_stop) +
+  tm_symbols("red", shape = 4, size = 3) +
+  tm_shape(nearby_stops) +
+  tm_dots("black", size = 1, alpha = .7) +
+  tm_shape(routes_local) +
+  tm_lines("route_short_name", lwd = 3, drop.levels = T,
+           title.col  = "Routes",
+           palette = "viridis") +
+  tm_layout(legend.outside = T)
+```
+
+
+```{r}
+nearby_stops |> 
+  rowwise() |> 
+  mutate(dist = st_distance(geometry, closed_stop),
+         dist_mi = round(as.numeric(units::set_units(dist, mile)), 1)) |> 
+  select(stop_name, stop_id, dist_mi) |> 
+  st_drop_geometry() |> 
+  arrange(dist_mi) |> 
+  head(10) |> 
+  knitr::kable(
+    col.names = c("Stop name", "#", "Distance (miles)")
+  )
+
+```
