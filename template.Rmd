@@ -21,7 +21,7 @@ knitr::knit_hooks$set(inline = function(x) {
               fixed = TRUE))
 })
 ```
-\thispagestyle {empty}
+\thispagestyle {empty} 
 \begin{huge}
 \textbf{This bus stop is closing June 11}
 \end{huge}
@@ -62,7 +62,7 @@ stop_desc <- paste0(closed_stop$stop_name.y,
 
 Starting June 11, Metro's bus network will change a lot. Buses will be faster and there will fewer transfers. But this stop, \textbf{`r stop_desc`}, will be closing permanently.
 
-These nearby stops will still be open. Find out more at mymetrobus.com/redesign or call (608) 266-4466.
+These nearby stops will still be open. Find out more at mymetrobus.com/redesign or call (608) 266-4466
 
 ```{r fig.align = 'center'}
 osm <- tmaptools::read_osm(bb(st_union(nearby_stops, closed_stop)), ext=1.1,
@@ -83,9 +83,9 @@ tm_rgb(alpha = .4) +
   tm_lines("route_short_name", lwd = 3, drop.levels = T,
            title.col  = "Routes",
            palette = "viridis") +
-  tm_layout(legend.outside = T)
+  tm_layout(legend.outside = T,
+            outer.margins = 0)
 ```
-
 
 ```{r}
 nearby_stops |> 

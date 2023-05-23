@@ -13,7 +13,7 @@ closed_stops <- read_csv("data/busstop-closedlist.csv") |>
          stop_name = `Stop Name`)
 
 #geocode stops with GTFS files
-gtfs <- read_gtfs("data/metro-2023-04-17-gtfs.zip")
+gtfs <- read_gtfs("data/metro-2023-05-14-gtfs.zip")
 
 stops <- gtfs$stops
 
@@ -30,7 +30,7 @@ closed_stops_sf <- closed_stops |>
 # next we need all the stops that will still have service after the redesign
 open_stops <- stops |>
   anti_join(closed_stops, by = c("stop_code" = "stop_id")) |>
-  filter(!stop_code %in% c("WeTP", "EaTP", "NoTP", "SoTP")) |>
+  filter(!stop_code %in% c("WeTP", "EaTP", "NoTP", "SoTP")) |> #remove transfer points
   st_as_sf(coords = c("stop_lon", "stop_lat"))
 st_crs(open_stops) <- 4326
 st_crs(closed_stops_sf) <- 4326
@@ -72,8 +72,10 @@ render_closure_map <- function(stop_id) {
                                          "_closure_sign.pdf"))
 }
 
+
 # iterate over all stops to produce the pdfs
-walk(closed_stops$stop_id, render_pdf) #index 420 and 421 caused errors
+walk(closed_stops$stop_id, render_closure_map) #index 420 and 421 caused errors
+
 
 
 # generate list of files as markdown links and copy to clipboard.
